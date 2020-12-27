@@ -23,7 +23,7 @@
         </div>
 
         <!-- Início do formulário -->
-        <form>
+        <form method="POST" action="processa.php"> 
 
             <fieldset class="grupo">
                 <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
@@ -49,47 +49,28 @@
             <div class="campo">
                 <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
                 <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                    <input type="radio" name="devweb" value="Frontend" checked>Front-end
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
+                    <input type="radio" name="devweb" value="Backend">Back-end
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                    <input type="radio" name="devweb" value="Fullstack">Fullstack
                 </label>
             </div>
 
             <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
             <div class="campo">
                 <label for="senioridade"><strong>Senioridade</strong></label>
-                <select id="senioridade" required>
+                <select id="senioridade" name ="senioridade"required>
                   <option selected disabled value="">Selecione</option>
-                  <option>Júnior</option>
-                  <option>Pleno</option>
-                  <option>Sênior</option>
+                  <option value="Junior">Júnior</option>
+                  <option value="Pleno">Pleno</option>
+                  <option value="Sênior">Sênior</option>
                 </select>
             </div>
 
-            <fieldset class="grupo">
-                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
-                <div id="check">
-                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
-                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                    <label for="tecnologia1"> HTML</label>
-                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                    <label for="tecnologia2"> CSS</label>
-                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
-                    <label for="tecnologia3"> JavaScript</label>
-                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-                    <label for="tecnologia4"> PHP</label>
-                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-                    <label for="tecnologia5"> C#</label>
-                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                    <label for="tecnologia6"> Python</label>
-                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
-                    <label for="tecnologia7"> Java</label>
-                </div>
-            </fieldset>
+            
 
             <!-- Caixa de texto -->
             <div class="campo">
@@ -99,7 +80,7 @@
             </div>
 
             <!-- Botão para enviar o formulário -->
-            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+            <button class="botao" type="submit">Concluído</button>            
 
         </form>
 
