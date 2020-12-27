@@ -10,5 +10,6 @@
 
     echo mysqli_connect_error();
 
+    echo "nothing";
 
 ?>
