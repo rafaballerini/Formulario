@@ -8,17 +8,24 @@
 #titulo {
     font-family: sans-serif;
     color: #380B61;
-    margin-left: 7%;
+    text-align: center;
+    font-size: 2em;
 } 
+
+/* Elemento com o ID "titulo" com o estado da pseudoclasse "hover" */
+#titulo:hover {
+    color: #CCBBFF;
+}
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
     font-family: sans-serif;
+    position: relative;
     color: #380B61;
-    margin-left: 10%;
+    margin-left: 25%;
 } 
 
-#check{
+#check {
     display: inline-block;
 }
 
@@ -117,6 +124,12 @@ fieldset.grupo .campo {
 }
 
 /* Elementos de classe botão e de tag <select> */
-.botao, select{
+.botao, select {
     cursor: pointer;
 }
+
+/* Elementos de classe "campo" das tags <input> com atributo checkbox */ 
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+

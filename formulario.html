@@ -1,26 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
     <head>
         <!-- Metadados -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+        <meta name="author" content="Rafaella Ballerini">
+        <meta name="description" content="FORMULÁRIOS COM HTML e CSS!">
+        <meta name="keywords" content="HTML, CSS, FORMULÁRIOS, formulário, DEVs, PHP, JavaScript, js, C#, 
+        Python, java">
+
+         <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
-
-        <!-- Título da página (aparece na aba) -->
-        <title>Cadastro</title>
     </head>
-
     <body>  
 
+        <!-- bloco de caixa contendo todo o formulário -->
+    <section  style="border: 1px solid #59429d; display: inline-block; padding: 15px; box-shadow: 10px  15px 10px #CCBBFF" >
         <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
-        <div>
+        <header>
             <h1 id="titulo">Cadastro de DEVs</h1>
             <p id="subtitulo">Complete suas informações</p>
             <br>
-        </div>
+        </header>
 
         <!-- Início do formulário -->
         <form>
@@ -49,13 +52,13 @@
             <div class="campo">
                 <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
                 <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                    <input type="radio" name="devweb" value="frontend" checked> Front-end
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
+                    <input type="radio" name="devweb" value="backend"> Back-end
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                    <input type="radio" name="devweb" value="fullstack"> Fullstack
                 </label>
             </div>
 
@@ -94,19 +97,17 @@
             <!-- Caixa de texto -->
             <div class="campo">
                 <br>
-                <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
-                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-            </div>
+                    <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
 
-            <!-- Botão para enviar o formulário -->
-            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+                    <!-- Botão para enviar o formulário -->
+                    <button class="botao" type="submit" onsubmit="">Concluído</button>         
+             </div>   
 
         </form>
 
-    </body>
+    </section>
+
+</body>
 
 </html>
-
-
-
-
