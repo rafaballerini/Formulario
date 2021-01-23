@@ -51,6 +51,7 @@ input, select, textarea, button {
     display: table;
 }
 
+
 /* Elementos de classe "grupo" no estado da pseudoclasse "after" */
 .grupo:after {
     clear: both;
@@ -75,7 +76,7 @@ fieldset.grupo .campo {
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+.campo input[type="text"], .campo input[type="email"], .campo input[type="telefone"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -94,17 +95,24 @@ fieldset.grupo .campo {
 
 /* Elemento de classe "botao" */
 .botao {
+    margin: 20px 0;
     font-size: 1.2em;
     background: #59429d;
     border: 0;
-    margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
+    position: relative;
+    top: 0.01em; 
+    left: 215px;
+   /* 
+    Aqui esta a antiga posição
+
+    position: absolut;
     top: 90%;
     left: 50%;
+    */
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
