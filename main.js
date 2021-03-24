@@ -22,7 +22,7 @@ function checkInputs(){
     let formValidation = 0;
 
     if(usernameValue === ''){
-        setErrorFor(username, 'Campo Obrigatório')
+        setErrorFor(username, 'Campo obrigatório')
 
     }else{
         setSuccessFor(username)
@@ -30,7 +30,7 @@ function checkInputs(){
     }
 
     if(sobrenomeValue === ''){
-        setErrorFor(sobrenome, 'Campo Obrigatório')
+        setErrorFor(sobrenome, 'Campo obrigatório')
 
     }else{
         setSuccessFor(sobrenome)
@@ -38,10 +38,10 @@ function checkInputs(){
     }
 
     if(emailValue === ''){
-        setErrorFor(email, 'Campo Obrigatório')
+        setErrorFor(email, 'Campo obrigatório')
 
     }else if(!isEmail(emailValue)){
-        setErrorFor(email, 'E-mail Inválido')
+        setErrorFor(email, 'E-mail inválido')
 
     }else{
         setSuccessFor(email)
@@ -49,7 +49,7 @@ function checkInputs(){
     }
 
     if(senioridadeValue === ''){
-        setErrorFor(senioridade, 'Selecione sua Senioridade')
+        setErrorFor(senioridade, 'Selecione sua senioridade')
 
     }else if (senioridadeValue !== ''){
         senioridadeSuccess(senioridade)
