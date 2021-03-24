@@ -58,7 +58,9 @@ input, select, textarea, button {
 
 /* Elementos de classe "campo" */
 .campo {
-    margin-bottom: 1em;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1em;
+    position: relative;
 }
 
 /* Elementos de classe "campo" de tag <label> */
@@ -120,3 +122,26 @@ fieldset.grupo .campo {
 .botao, select{
     cursor: pointer;
 }
+
+/*form validation*/
+.campo.error input{
+    border-color: #e74c3c
+}
+
+.campo.error small{
+    color:#e74c3c;
+    visibility: visible;
+}
+
+
+.campo small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.campo.success input{
+    border-color: #2ecc71
+}
+
