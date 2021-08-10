@@ -68,6 +68,13 @@ input, select, textarea, button {
     display: block;
 }
 
+/* Barra vertical que separa cada elemento label do campo 'tecnologias que utiliza' */
+
+label::after{
+    content: "|";
+    margin: 3px;
+}
+
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
     float:  left;
@@ -120,3 +127,4 @@ fieldset.grupo .campo {
 .botao, select{
     cursor: pointer;
 }
+
