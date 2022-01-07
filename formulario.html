@@ -48,15 +48,12 @@
             <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
             <div class="campo">
                 <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-                <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
-                </label>
+                <select id="De qual lado da aplicação você desenvolve" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Front-end</option>
+                  <option>back-end</option>
+                  <option>Fullstack</option>
+                </select>
             </div>
 
             <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
