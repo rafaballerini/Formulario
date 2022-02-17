@@ -33,6 +33,7 @@ body{
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
+    
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
@@ -120,3 +121,5 @@ fieldset.grupo .campo {
 .botao, select{
     cursor: pointer;
 }
+
+muito rico
