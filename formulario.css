@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Container do conteudo principal*/
+.container{
+    width: fit-content;
+}
 
 /* Elementos com o ID "titulo" */
 #titulo {
@@ -78,7 +82,7 @@ fieldset.grupo .campo {
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #59429d;
+    border: none;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
