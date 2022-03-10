@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded",()=>{
             var select_Vazio = campoType_Select.value=="";
 
             if(campoText_Vazio || campoRadio_Vazio || select_Vazio){
-                console.log(campoText_Vazio);
                 even.preventDefault();
             }
             mostraAlert(campoText_Vazio,campoRadio_Vazio,select_Vazio);
