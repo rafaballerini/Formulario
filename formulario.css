@@ -9,14 +9,14 @@
     font-family: sans-serif;
     color: #380B61;
     margin-left: 7%;
-} 
+}
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
     font-family: sans-serif;
     color: #380B61;
     margin-left: 10%;
-} 
+}
 
 #check{
     display: inline-block;
@@ -97,16 +97,15 @@ fieldset.grupo .campo {
     font-size: 1.2em;
     background: #59429d;
     border: 0;
+    margin-top: 5px;
     margin-bottom: 1em;
+    margin-left: calc(25% - 1.2em);
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
